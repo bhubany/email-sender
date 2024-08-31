@@ -9,7 +9,7 @@ class AwsServices(Enum):
     SES = 'ses'
 
 
-class AwsConfiguration:
+class AwsConfig:
     def __init__(self):
         self.__region = get_environment_variable_or_default(
             'AWS_REGION', "ap-south-1")
